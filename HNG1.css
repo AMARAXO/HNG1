@@ -1,0 +1,18 @@
+img {
+width: 270px;
+height: 300px;
+border-radius: 70%;
+margin: 10px;
+}
+h1 {
+    border: 10px;
+    border-color: aquamarine;
+    
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: auto;
+    background-color: #804b2d;
+}
