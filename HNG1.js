@@ -14,9 +14,10 @@ function updateClock() {
     now.getUTCMinutes().toString().padStart(2,'0');
     const seconds =
     now.getUTCSeconds().toString().padStart(2, '0');
+    const ms = now.getUTCMilliseconds().toString().padStart(3,'0')
 
     dayElement.textContent = `Day: ${dayOfweek}`;
-    UTCtimeElement.textContent = `Time: ${hours}:${minutes}:${seconds}`;
+    UTCtimeElement.textContent = `Time: ${hours}:${minutes}:${seconds}:${ms}`;
 
     setInterval(updateClock, 1000);
 }
