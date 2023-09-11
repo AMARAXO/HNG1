@@ -8,16 +8,10 @@ function updateClock() {
     
     const dayOfweek = daysOfWeek[now.getUTCDay()];
 
-   const hours =
-    now.getUTCHours().toString().padStart(2, '0');
-    const minutes =
-    now.getUTCMinutes().toString().padStart(2,'0');
-    const seconds =
-    now.getUTCSeconds().toString().padStart(2, '0');
-    const ms = now.getUTCMilliseconds().toString().padStart(3,'0')
+   const ct = Date.now()
 
     dayElement.textContent = `Day: ${dayOfweek}`;
-    UTCtimeElement.textContent = `Time: ${hours}:${minutes}:${seconds}:${ms}`;
+    UTCtimeElement.textContent = `Time: ${ct}`;
 
     setInterval(updateClock, 1000);
 }
