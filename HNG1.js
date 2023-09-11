@@ -10,8 +10,8 @@ function updateClock() {
 
    const ct = Date.now()
 
-    dayElement.textContent = `Day: ${dayOfweek}`;
-    UTCtimeElement.textContent = `Time: ${ct}`;
+    dayElement.textContent = ` ${dayOfweek}`;
+    UTCtimeElement.textContent = ` ${ct}`;
 
     setInterval(updateClock, 1000);
 }
